@@ -1,0 +1,67 @@
+.slider{
+    background-color:#F9F9F9 ;
+    padding: 30px 0px;
+    &__carousel{
+        display: flex;
+        flex-direction: column;
+        @media @screen-gt-s {
+            flex-direction: row-reverse;
+        }
+    }
+    &__image{
+        max-width: 289px;
+        align-items: center;
+    }
+    &__clothes{
+        font-size: 26px;
+        text-align: center;
+        margin-top:39px;
+        @media @screen-gt-s {
+            text-align: left;
+        }
+    }
+    &__button{
+        width: 150px;
+        height: 38px;
+        margin-top: 10px;
+        margin-left:65px;
+        cursor: pointer;
+        background: @color-primary;
+        box-sizing: border-box;
+        position: relative;
+        @media @screen-gt-s {
+            margin-left:0;
+        }
+    }
+    &__button:hover{
+        background: @color-primary-hover;
+    }
+    &__button-text{
+        right: 15px;
+        top: 8px;
+        color: #FFFFFF;
+        position: absolute;
+    }
+
+    &__ellipse-conteiner{
+        display: flex;
+        position: absolute;
+        top: 310px;
+        left: 42%;
+        @media @screen-gt-s {
+            left:47%;
+            top:340px;
+        }
+    }
+    &__ellipse{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #DFDEDD;
+        display: inline-block;
+        margin-left: 4px;
+    }
+    &__ellipse:hover{
+        background-color: @color-dark;
+    }
+}
