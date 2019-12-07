@@ -1,0 +1,47 @@
+.input {
+    &__field {
+        margin-top: 10px;
+        display: flex;
+    }
+
+    &__brim {
+        height: 38px;
+        width: 91%;
+        background: transparent;
+        border: 1px solid #DFDEDD;
+        font: 14px/(@control-height - 2px) Arial, sans-serif;
+        padding: 0 10px;
+
+        @media @screen-gt-s {
+            width: 320px;
+        }
+
+        @media @screen-gt-m {
+            width: 530px;
+        }
+    }
+
+    &__brim::-webkit-input-placeholder {
+        color: #AEB5B9;
+    }
+
+    &__phone {
+       
+        &__region {
+            width: 18px;
+        }
+    
+        &__cod {
+            width: 63px;
+        }
+    
+        &__number {
+            flex-grow: 1;
+        }
+    }
+    
+    &__address {
+        height: 100px;
+        width:  100%;
+    }
+}

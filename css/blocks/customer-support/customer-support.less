@@ -1,27 +1,33 @@
-.customer-support{
-  padding: 15px 0;
-  background-color: #EEEEEE;
-
-  @media @screen-gt-s {
-    padding: 30px 0;
-  }
+.customer-support {
+  background:  #EEEEEE;
+  padding-bottom: 15px;
+  padding-top: 15px;
   
-  &__container{
-  display: flex;
-  margin: 15px 0;
-  align-items: center;
-  @media @screen-gt-s {
-    margin: 0;
+  @media @screen-only-l {
+      padding-bottom: 25px;
+      padding-top: 25px;
+  }
+
+  &__container {
+    margin: 15px 0px;
+  }
+
+  &__image-container {
+    display: flex;
+    align-items: center;
   }
 
   &__image {
-    width: 40px;
-    height: 40px;
-    
-  }
+    margin-right: 22px;
+    width: 38px;
 
-  &__text {
-    padding-left:8px;
+    @media @screen-only-m {
+        margin-right: 12px;
+    }
+
+    @media @screen-only-l {
+        width: 50px;
+        margin-right: 30px;
+    }
   }
-}
 }

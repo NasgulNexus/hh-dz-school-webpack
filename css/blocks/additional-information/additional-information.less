@@ -1,28 +1,23 @@
-.additional-information{
+.additional-information {
     display: none;
-    padding: 10px 30px;
+    padding: 10px 0px;
+    
     @media @screen-gt-s {
         display: block;
     }
-    &__conteiner{
+
+    &__container {
         display: flex;
         justify-content: space-between;
-    }
-    &__city{
-        color: #666666;
-        display: inline-block;
-    
-    }
-   
-    &__items{
-        display: inline-block;
-        justify-content: flex-end;
-      
-    }
-  
-    &__text {
-        margin-left: 20px;
-        color:#609FCF;   
+        align-items: center;
     }
 
+    &__city {
+        color: #666666;
+    }
+   
+    &__text {
+        color:#609FCF; 
+        font-size: 14px;  
+    }
 }
